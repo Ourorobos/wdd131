@@ -38,7 +38,7 @@ main {
     margin: auto;
     margin-bottom: 20px;
     margin-top: 20px;
-    width: 70%;
+    max-width: 70%;
 }
 
 main h2 {
