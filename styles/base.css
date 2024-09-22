@@ -16,6 +16,11 @@ header nav {
 
 header nav a {
     display: block;
+    text-decoration: none;
+}
+
+header nav a:hover {
+    text-decoration: underline;
 }
 
 main {
