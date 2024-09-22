@@ -1,0 +1,92 @@
+header {
+    background-color: steelblue;
+}
+
+header  h1 {
+    text-align: center;
+}
+
+header nav {
+    background-color: paleturquoise;
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+header nav a {
+    display: block;
+}
+
+main {
+    background-color: whitesmoke;
+
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-column-gap: 5%;
+    margin: auto;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    width: 70%;
+}
+
+main h2 {
+    text-align: center;
+}
+
+main h3 {
+    text-align: center;
+    margin-top: 35px;
+}
+
+main img {
+    margin: 15px;
+}
+
+main p {
+    margin: 15px;
+}
+
+footer {
+background-color: steelblue;
+
+    text-align: center;
+}
+
+.card {
+    border-style: solid;
+    border-width: 2px;
+    border-color: slategrey;
+    border-radius: 10px;
+}
+
+.card h2 {
+    background-color: steelblue;
+    padding: 10px;
+    margin: 0;
+}
+
+.card #link{
+    display: flex;
+}
+.card #link ul {
+    align-self: center;
+}
+
+.card #link ul a {
+    display: block;
+}
+
+#profile img {
+    float: right;
+}
+
+#state h3 {
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+    border-bottom-color: slategrey;
+}
+
+#state img {
+    float: left;
+}
