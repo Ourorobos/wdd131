@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+
+<html lang="en-US">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Wyoming Place page for WDD 131 Schoolwork">
+        <meta name="author" content="Steven Scott">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto&display=swap">
+        <link rel="stylesheet" href="styles/place.css">
+        <link rel="stylesheet" href="styles/place-large.css">
+
+        <script src="scripts/getdates.js" defer></script>
+        <script src="scripts/place.js" defer></script>
+
+        <title>
+            Wyoming | WDD 131
+        </title>
+    </head>
+    <body>
+        <header>
+            <h1>
+                Wyoming
+            </h1>
+        </header>
+        <main>
+            <picture>
+                <source srcset="images/Buffalo.webp" media="(min-width: 750px)">
+                <img src="images/Buffalo-small.webp" alt="buffalo">
+            </picture>
+            <section id="data">
+                <h2>Data</h2>
+                <p><span>Statehood: </span>1890; 44th state</p>
+                <p><span>State Bird: </span> Meadowlark</p>
+                <p><span>State Flower: </span> Indian Paintbrush</p>
+                <p><span>State Mammal: </span> Buffalo</p>
+                <p><span>Capital: </span> Cheyenne</p>
+                <p><span>Area:</span> 97,063 sq miles</p>
+                <p><span>Population: </span>2023; 584,057,000</p>
+            </section>
+            <section id="weather">
+                <h2>Weather <span>&#9924</span></h2>
+                <img src="images/Snow-weather.svg" alt="Snowing">
+                <p><span>Temperature: </span> -66 &#8457</p>
+                <p><span>Wind: </span>128 mph</p>
+                <p id="windChill"><span>Feels Like: </span>less then -141 &#8457</p>
+                <p><span>Conditions: </span>Snowy</p>
+            </section>
+        </main>
+        <footer>
+            <p>
+                &copy;<span id="currentyear"></span> | Steven Scott | USA
+            </p>
+            <p id="lastModified"></p>
+        </footer>
+    </body>
+</html>

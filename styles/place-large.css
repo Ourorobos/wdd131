@@ -1,0 +1,42 @@
+@media screen and (min-width: 750px) {
+    body {
+        max-width: 100%;
+    }
+
+    main {
+        background-color: darkblue;
+    }
+
+    main section {
+        position: absolute;
+        margin: 0;
+        padding: 1rem;
+        border-radius: 1rem;
+        background-color: rgba(245, 245, 245, 0.6);
+    }
+
+    main section h2 {
+        padding: 1rem;
+        border-radius: 1rem;
+        background-color: rgba(255, 0, 0, 0.8);
+    }
+
+    main section h2 span {
+        display: inline-block;
+        padding-left: 1.5rem;
+    }
+
+    main section img {
+        display: none;
+    }
+
+    #data {
+        top: 15%;
+        left: 5%;
+    }
+
+    #weather {
+        bottom: 15%;
+        right: 5%;
+    }
+}
