@@ -21,8 +21,8 @@
         background-color: rgba(255, 0, 0, 0.8);
     }
 
-    main section h2 span {
-        display: inline-block;
+    main section h2::after {
+        content: "\26c4";
         padding-left: 1.5rem;
     }
 

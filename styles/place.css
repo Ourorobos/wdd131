@@ -1,3 +1,8 @@
+:root {
+    --red: #f00;
+    --blue: #00008b;
+}
+
 body {
     background-color: whitesmoke;
     
@@ -26,10 +31,6 @@ main picture img {
 
 main section {
     text-align: center;
-}
-
-main section h2 span {
-    display: none;
 }
 
 main section img {
