@@ -1,6 +1,6 @@
 :root {
-    --red: #f00;
-    --blue: #00008b;
+    --red-color: #f00;
+    --blue-color: #00008b;
 }
 
 body {
@@ -13,7 +13,7 @@ body {
 }
 
 header {
-    background-color: darkblue;
+    background-color: var(--blue-color);
     color: whitesmoke;
     
     display: flex;
@@ -22,7 +22,7 @@ header {
 }
 
 main picture img {
-    background-color: red;
+    background-color: var(--red-color);
     padding-top: 1rem;
     padding-bottom: 1rem;
     width: 100%;
@@ -42,7 +42,7 @@ main section span {
 }
 
 footer {
-    background-color: darkblue;
+    background-color: var(--blue-color);
     color: whitesmoke;
     padding: 1rem;
     
