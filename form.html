@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+
+<html lang="en-US">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Product review page for WDD 131 Schoolwork">
+        <meta name="author" content="Steven Scott">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto&display=swap">
+        <link rel="stylesheet" href="styles/form.css">
+
+        <script src="scripts/getdates.js" defer></script>
+        <script src="scripts/form.js" defer></script>
+
+        <title>
+            Product Review | WDD 131
+        </title>
+    </head>
+    <body>
+        <header>
+            <h1>
+                Product Review
+            </h1>
+        </header>
+        <main>
+            <form action="review.html" method="get">
+                <label for="select">Product Name <span> (required)</span></label>
+                <select id="select" name="select" required>
+                    <option selected disabled>Select a Product</option>
+                </select>
+
+                <section id="rating">
+                    <label>Overall Rating <span> (required)</span></label>
+                    <br>
+
+                    <div>
+                        <label for="radio1">&#x2606;</label>
+                        <input type="radio" id="radio1" name="rating" required>
+                    </div>
+                    <div>
+                        <label for="radio2">&#x2606;&#x2606;</label>
+                        <input type="radio" id="radio2" name="rating" required>
+                    </div>
+                    <div>
+                        <label for="radio3">&#x2606;&#x2606;&#x2606;</label>
+                        <input type="radio" id="radio3" name="rating" required>
+                    </div>  
+                    <div>
+                        <label for="radio4">&#x2606;&#x2606;&#x2606;&#x2606;</label>
+                        <input type="radio" id="radio4" name="rating" required>
+                    </div>
+                    <div>
+                        <label for="radio5">&#x2606;&#x2606;&#x2606;&#x2606;&#x2606;</label>
+                        <input type="radio" id="radio5" name="rating" required>
+                    </div>                    
+                </section>
+
+                <label for="date">Date of Installation <span> (required)</span></label>
+                <input type="date" id="date" name="date" required>
+                <br>
+
+                <section id="features">
+                    <label>Which feature did you find useful? <span> (Check all that apply)</span></label>
+                    <div>
+                        <input type="checkbox" id="box1" name="box1" value="">
+                        <label for="box1">Product Durability</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="box2" name="box2" value="">
+                        <label for="box2">Ease of Product Use</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="box3" name="box3" value="">
+                        <label for="box3">Performance of Product</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="box4" name="box4" value="">
+                        <label for="box4">Design of Product</label>
+                    </div>
+                </section>
+                <br>
+
+                <label for="textarea">Written Review <span> (optional)</span></label>
+                <textarea id="textarea" name="review" rows="5" cols="58"></textarea>
+                <br>
+
+                <label for="name">User Name <span>( optional)</span></label>
+                <input type="name" id="name">
+                <br>
+
+                <input type="submit" id="submit" value="Submit Review">
+            </form>            
+        </main>
+        <footer>
+            <p>
+                &copy;<span id="currentyear"></span> | Steven Scott | USA
+            </p>
+            <p id="lastModified"></p>
+        </footer>
+    </body>
+</html>

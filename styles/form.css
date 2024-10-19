@@ -1,0 +1,62 @@
+body {
+    font-family: 'roboto', sans-serif;
+    text-align: center;
+    width: 500px;
+    margin:auto;
+}
+
+header, footer {
+    padding: 1rem;
+    background-color: darkblue;
+    color: whitesmoke;
+    border-radius: 1rem;
+}
+
+main {
+    background-color: steelblue;
+    padding: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 1rem;
+}
+
+label {
+    text-align: center;
+    font-weight: bold;
+    font-size: larger;
+}
+
+#select, #date, #name, #submit {
+    width: 27.5rem;
+    height: 2rem;
+    margin-bottom: 1rem;
+}
+
+#rating div{
+    display: inline-block;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    padding-bottom: 1rem;
+    margin: 0;
+}
+
+#rating div label {
+    display: block;
+}
+
+#features div {
+    display:flex;
+}
+
+textarea {
+    margin-bottom: 1rem;
+}
+
+#submit {
+    border-radius: 0.5rem;
+    font-size: larger;
+}
+
+span {
+    font-size: medium;
+}

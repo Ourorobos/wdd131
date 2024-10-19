@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+
+<html lang="en-US">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Product review page for WDD 131 Schoolwork">
+        <meta name="author" content="Steven Scott">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto&display=swap">
+        <link rel="stylesheet" href="styles/form.css">
+
+        <script src="scripts/getdates.js" defer></script>
+        <script src="scripts/review.js" defer></script>
+
+        <title>
+            Product Review | WDD 131
+        </title>
+    </head>
+    <body>
+        <header>
+            <h1 onclick="empty()"> <!--need this to reset with out showing anything-->
+                Thanks, For Your Review!
+            </h1>
+        </header>
+        <main>
+                 <p><span>0</span> reviews have been placed!</p>  
+        </main>
+        <footer>
+            <p>
+                &copy;<span id="currentyear"></span> | Steven Scott | USA
+            </p>
+            <p id="lastModified"></p>
+        </footer>
+    </body>
+</html>
