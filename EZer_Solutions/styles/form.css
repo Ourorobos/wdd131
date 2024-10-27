@@ -1,0 +1,13 @@
+body {
+    font-size: larger;
+    width: 550px;
+    margin: auto;
+}
+
+header, footer {
+    text-align: center;
+}
+
+aside {
+    float: right;
+}
