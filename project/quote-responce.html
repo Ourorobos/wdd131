@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+<html lang="en-US">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Responce page for the Quote page">
+        <meta name="author" content="Steven Scott">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="reconnect" href="https://fonts.gstatic.com" crossorigin>
+
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto&display=swap">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter&display=swap">
+        <link rel="stylesheet" href="styles/main.css">
+        <link rel="stylesheet" href="styles/form.css">
+
+        <script src="scripts/main.js" defer></script>
+        <script src="scripts/quote.js"></script>
+
+        <title>
+            Quote Responce Page
+        </title>
+    </head>
+
+    <body onload="load()">
+        <header>
+            <h1>Wyo Auto Salvage</h1>
+            <nav>
+                <a href="#">Home</a>
+                <a href="search.html">Find A Part</a>
+                <a href="quote.html">Sell Your Used Car</a>
+            </nav>
+        </header>
+        <main>
+            <h2>Thank you for your sumbition!</h2>
+            <p>We will be sending an email to <span id="email">| insert email here |</span> with your quote shortly.</p>
+            <button onclick="clear()"><a href="index.html">Return To Home Page</a></button>
+        </main>
+        <footer></footer>
+    </body>
+</html>

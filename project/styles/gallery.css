@@ -1,0 +1,27 @@
+#gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+section {
+    background-color: darkorange;
+    border-radius: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+}
+
+section h3 {
+    padding: 1rem;
+}
+
+section img {
+    box-shadow: 0px 0px 3px 3px darkgrey;
+    max-width: 90%;
+    height: auto;
+    margin-bottom: 1rem;
+}
+
+section p span {
+    font-weight: bold;
+}

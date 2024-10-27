@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+
+<html lang="en-US">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Search for parts available at Wyo Auto Slavage">
+        <meta name="author" content="Steven Scott">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="reconnect" href="https://fonts.gstatic.com" crossorigin>
+
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto&display=swap">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter&display=swap">
+        <link rel="stylesheet" href="styles/main.css">
+        <link rel="stylesheet" href="styles/form.css">
+
+        <script src="scripts/main.js" defer></script>
+        <script src="scripts/dictionary.js" defer></script>
+        <script src="scripts/search.js" defer></script>
+
+        <title>
+            Part Search
+        </title>
+    </head>
+
+    <body>
+        <header>
+            <h1>Wyo Auto Salvage</h1>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="#">Find A Part</a>
+                <a href="quote.html">Sell Your Used Car</a>
+            </nav>
+        </header>
+        <main>
+            <h2>Find A Part</h2>
+
+            <form action="search-responce.html">
+                <fieldset>
+                    <legend>Vehicle</legend>
+                    
+                    <label>
+                        Year: <input type="number" id="year" required>
+                    </label>
+                    <label>
+                        Model: <input type="text" id="model" required>
+                    </label>
+                    <label>
+                        Vin: <input type="text" id="vin" value="none">
+                    </label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Part Info</legend>
+
+                    <label>
+                        Part: <select id="part" onchange="generateOptions(dictionary)" required>
+                                <optgroup label="Body">
+                                    <option value="bummper">Bumper</option>
+                                    <option>Grill</option>
+                                    <option>Hood</option>
+                                    <option value="fender">Fender</option>
+                                    <option value="door">Door</option>
+                                    <option>Lid Gate</option>
+                                    <option>Roof</option>
+                                    <option value="rockerpost">Rocker & Post</option>
+                                    <option value="quaterpanel">Quarter Panel</option>
+                                    <option>Bed Box</option>
+                                </optgroup>
+                                <optgroup label="Power Train">
+                                    <option>Engine</option>
+                                    <option>Transmission</option>
+                                    <option>Transfer Case</option>
+                                    <option value="driveshaft">Drive Shaft</option>
+                                    <option value="carrier">Carrier</option>
+                                    <option value="axle">Axle</option>
+                                    <option value="axleshaft">Axle Shaft</option>
+                                </optgroup>
+                                <optgroup label="Interior">
+                                    <option value="airbags">Air Bags</option>
+                                    <option>Steering Column</option>
+                                    <option>Steering Wheel</option>
+                                    <option>Dash</option>
+                                    <option value="seat">Seat</option>
+                                    <option>Roof Liner</option>
+                                    <option>Center Console</option>
+                                    <option>Roof Center Console</option>
+                                    <option>Heat/AC Controls</option>
+                                    <option>A/V Equipment</option>
+                                </optgroup>
+                                <optgroup label="Under Body & Hood">
+                                    <option value="wheel">Wheel</option>
+                                    <option value="controlarm">Control Arm</option>
+                                    <option>Sway Bar</option>
+                                    <option>Crossmember</optoin>
+                                    <option value="springs">Struts $ Springs</option>
+                                    <option>Steering Gear Box</option>
+                                    <option>Fuel Tank</option>
+                                    <option>Frame</option>
+                                    <option>Intercooler</option>
+                                    <option>Radiator</option>
+                                    <option>Condenser</option>
+                                    <option>Transmission Cooler</option>
+                                    <option>Colling Fan</option>
+                                    <option>Water Pump</option>
+                                    <option>Steering Pump</option>
+                                    <option>Washer Bottle</option>
+                                    <option>Coolent Bottle</option>
+                                    <option>Master Cylinder</option>
+                                    <option>Brake Booster</option>
+                                    <option>ABS Module</option>
+                                    <option>AC Compresser</option>
+                                </optgroup>
+                                <optgroup label="Electical">
+                                    <option value="headlamp">Headlamp</option>
+                                    <option value="foglamp">Foglamp</option>
+                                    <option value="taillight">Taillight</option>
+                                    <option>Brain Box</option>
+                                    <option>Fuse Box</option>
+                                    <option>Alternator</option>
+                                    <option>Engine Wire Harnes</option>
+                                </optgroup>
+                        </select>
+                    </label>
+
+                    <div id="options">No Options</div>
+                </fieldset>
+                <button>Search</button>
+            </form>
+        </main>
+        <footer></footer>
+    </body>
+</html>

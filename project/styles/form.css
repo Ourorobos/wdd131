@@ -1,0 +1,48 @@
+fieldset {
+    border-color: darkorange;
+    border-radius: 1rem;
+    max-width: 90%;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+fieldset fieldset {
+    border-color: darkblue;
+}
+
+legend {
+    font-weight: bold;
+}
+
+label {
+    display: inline-block;
+    padding: 1rem;
+}
+
+label:hover {
+    text-decoration: underline;
+}
+
+#options {
+    display: inline-block;
+}
+
+button {
+    font-weight: bold;
+    font-size: 44px;
+    color: whitesmoke;
+    background-color: darkblue;
+    border-color: darkgrey;
+    border-radius: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+button:hover {
+    background-color: darkorange;
+}
+
+button a {
+    color: whitesmoke;
+    text-decoration: none;
+}

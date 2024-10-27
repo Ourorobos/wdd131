@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+
+<html lang="en-US">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Quote request page for selling your car to Wyo Auto Slavage">
+        <meta name="author" content="Steven Scott">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="reconnect" href="https://fonts.gstatic.com" crossorigin>
+
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto&display=swap">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter&display=swap">
+        <link rel="stylesheet" href="styles/main.css">
+        <link rel="stylesheet" href="styles/form.css">
+
+        <script src="scripts/main.js" defer></script>
+        <script src="scripts/quote.js" defer></script>
+
+        <title>
+            Request Vehicle Quote
+        </title>
+    </head>
+
+    <body>
+        <header>
+            <h1>Wyo Auto Salvage</h1>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="search.html">Find A Part</a>
+                <a href="#">Sell Your Used Car</a>
+            </nav>
+        </header>
+        <main>
+            <h2>Request A Quote</h2>
+
+            <form action="quote-responce.html">
+                <fieldset>
+                    <legend>Contact Info</legend>
+                    
+                    <label>
+                        First Name: <input type="text" required>
+                    </label>
+
+                    <label>
+                        Last Name: <input type="text" required>
+                    </label>
+
+                    <label>
+                        Email: <input type="email" id="email" required>
+                    </label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Vehicle</legend>
+                    
+                    <label>
+                        Year: <input type="number" id="year" required>
+                    </label>
+                    <label>
+                        Model: <input type="text" id="model" required>
+                    </label>
+                    <label>
+                        Vin: <input type="text" id="vin">
+                    </label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Condition</legend>
+
+                    <fieldset>
+                        <legend>Does it Start?</legend>
+                        <label> Yes: <input type=radio name="run" required></label>
+                        <label> No: <input type="radio" name="run" required></label>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Does it Run?</legend>
+                        <label> Yes: <input type=radio name="drive" required></label>
+                        <label> No: <input type="radio" name="drive" required></label>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Interior</legend>
+                        <label>Good: <input type="radio" name="interior" required></label>
+                        <label>Okay: <input type="radio" name="interior" required></label>
+                        <label>Bad: <input type="radio" name="interior" required></label>
+                        <label>I'm Not Sure <input type="radio" name="interior" required></label>
+                    </fieldset>                    
+
+                    <fieldset>
+                        <legend>Exterior</legend>
+                        <label>Good: <input type="radio" name="exterior" required></label>
+                        <label>Okay: <input type="radio" name="exterior" required></label>
+                        <label>Bad: <input type="radio" name="exterior" required></label>
+                        <label>I'm Not Sure <input type="radio" name="exterior" required></label>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Has This Vehicle Been In A Accident?</legend>
+                        <label> Yes: <input type=radio name="accident" onclick="addDamageQuery()" required></label>
+                        <label> No: <input type="radio" name="accident" onclick="removeDamageQuery()" required></label>
+                        <Section></Section>
+                    </fieldset>
+                </fieldset>
+                <button onclick="save()">Request Quote</button>
+            </form>
+
+        </main>
+        <footer></footer>
+    </body>
+</html>
